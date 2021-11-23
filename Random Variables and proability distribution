@@ -80,5 +80,72 @@ The shape of any distribution can be described by its various ‘moments’. The
 3) The third moment is the skewness, which indicates any asymmetric ‘leaning’ to either left or right.
 4) The fourth moment is the Kurtosis, which indicates the degree of central ‘peakedness’ or, equivalently, the ‘fatness’ of the outer tails.
 
+
 Normal 
-f(x) = 1 / sigma * sqrt(2*pi)    e ^ (1/2) ((x-miu)/sigma))^2
+
+f(x) = 1 / sigma * sqrt(2*pi)    e ^ - (x-miu) ^2/ (2 * sigma ^ 2)
+for normal distribution, we have mean=median=mode, symmetry about the center
+
+68% of values are within 1 standard deviation of the mean
+95% of values are within2 standard deviations of the mean
+99.7% of values are within 3 standard deviations of the mean
+
+# Example: 95% of students at school are between 1.1m and 1.7m tall.
+Mean = (1.1+1.7) / 2 = 1.4
+range = 4 * std, thus std = 0.15
+
+standard normal distribution: sigma =1 ,miu =0 
+f(x) = 1/sqrt(2* pi) exp(- x^2/2)
+Standardized
+In statistics, standardized variables are variables that have been standardized to have a mean of 0 and a standard deviation of 1.
+The number of standard deviations from the mean is also called the "Standard Score", "sigma" or "z-score".
+Standardizing makes it easier to compare scores, even if those scores were measured on different scales.
+
+z = (x-mean)/std
+So to convert a value to a Standard Score ("z-score"):
+
+
+Weibull distribution
+
+f(x,lambda,k) = k/lambda (x/lambda) ^ (k-1) for x>= 0
+              = 0                           for x<0
+k > 0 shape parameter, lambda > 0 scale parameter
+
+F(x,k,lambda) = 1 - e ^ - ( (x/lambda)^ k)
+
+
+Chi-squre distribution
+A chi-square distribution is a continuous distribution with degrees of freedom. 
+It is the sum of the squares of N normally distributed random variables. Because the normal distribution is continuous, 
+so is its square, and so is the sum of multiple squares.
+It is also used to test the goodness of fit of a distribution of data. 
+Additionally, chi-square distribution is a special case of the gamma distribution.
+
+
+Exponential distribution
+is the probability distribution of the time between events in a Poisson point process.
+It is a particular case of the gamma distribution:
+The exponential distribution predicts the wait time until the *very first* event. 
+The gamma distribution, on the other hand, predicts the wait time until the *k-th* event occurs.
+
+f(x,lambda) = lambda * e^ (- lambda x).  x>=0
+            =. 0                         x<0
+lambda is the rate parameter    
+
+F(x,lambda) = 1 - e^(-lambda x).    x>=0
+            = 0                     x<0
+E(x) = 1/lambda
+Var(X) = 1/lambda^2
+The moments E(X^n) = n! / lambda ^ n
+
+
+
+##### Special case of distribution parametrization
+A binomial distribution with parameters n = 1 and p is a Bernoulli distribution with parameter p.
+A negative binomial distribution with parameters n = 1 and p is a geometric distribution with parameter p.
+A gamma distribution with shape parameter α = 1 and rate parameter β is an exponential distribution with rate parameter β.
+A gamma distribution with shape parameter α = v/2 and rate parameter β = 1/2 is a chi-squared distribution with ν degrees of freedom.
+A chi-squared distribution with 2 degrees of freedom wer(k = 2) is an exponential distribution with a mean value of 2 (rate λ = 1/2 .)
+A Weibull distribution with shape parameter k = 1 and rate parameter β is an exponential distribution with rate parameter β.
+
+
