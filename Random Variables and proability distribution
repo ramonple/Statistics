@@ -1,0 +1,84 @@
+Random Variables and proability distribution
+
+Variables can be classified into discrete variable and continuous variable.
+
+1. Discrete
+For a discrete random variable, x, the probability distribution is defined by a probability mass function, denoted by f(x). 
+This function provides the probability for each value of the random variable. In the development of the probability function 
+for a discrete random variable, two conditions must be satisfied: 
+(1) f(x) must be nonnegative for each value of the random variable, and 
+(2) the sum of the probabilities for each value of the random variable must equal one.
+
+2. Continuous
+In the continuous case, the counterpart of the probability mass function is the probability density function, also denoted by f(x). 
+For a continuous random variable, the probability density function provides the height or value of the function at any particular value of x; 
+it does not directly give the probability of the random variable taking on a specific value. 
+However, the area under the graph of f(x) corresponding to some interval, obtained by computing the integral of f(x) over that interval, provides the probability that the variable will take on a value within that interval. A probability density function must satisfy two requirements: 
+(1) f(x) must be nonnegative for each value of the random variable, and 
+(2) the integral over all values of the random variable must equal one.
+
+E(X)
+The expected value, or mean, of a random variable—denoted by E(x) or μ—is a weighted average of the values the random variable may assume. 
+discrete: E(x) = Σxf(x) 
+continuous:  ∫xf(x)dx
+
+Var(X)
+The variance of a random variable, denoted by Var(x) or σ2, is a weighted average of the squared deviations from the mean. 
+discrete: Var(x) = σ2 = Σ(x − μ)^2 f(x)
+continuous:Var(x) = σ2 = ∫(x − μ)^2 f(x)dx
+
+
+# discrete probability distribution
+Binomial
+Geometric
+Possion
+
+# Continuous proability distribution
+Uniform 
+Normal
+
+
+# discrete
+You use the binomial distribution to compute probabilities for a process where only one of two possible outcomes may occur on each trial. 
+The geometric distribution is related to the binomial distribution; you use the geometric distribution to determine the probability that a specified number of trials will take place before the first success occurs. 
+You can use the Poisson distribution to measure the probability that a given number of events will occur during a given time frame.
+
+Binomial X~B(n,p) 
+the probability of getting exactly k sucesses in n independent Bernouli trails:
+f(k,n,p) = Pr(x=k) = {n k}p^k (1-p)^(n-k) = ( n!/k!(n-k)!)(1-p)^(n-k)
+E(X) = np, Var(X)=np(1-p)
+
+Geometric
+If the probability of success on each trial is p, then the probability that the kth trial (out of k trials) is the first success is
+Pr(x=k) = (1-p) ^(k-1) * p
+E(X) = 1/p, Var(x)= (1-p) / p^2
+
+Poisson
+A discrete random variable X is said to have a Poisson distribution, with parameter lambda >0, if it has a probability mass function given by:
+p(k,lambda) = lambda^k * e^(-lambda) / k !
+k is the number of occurrences
+e is the euler's number
+! is the factorial funtion
+E(X)= Var(X) = lambda
+
+# Continuous
+
+Uniform
+The uniform distribution is useful because it represents variables that are evenly distributed over a given interval. 
+f(x) = 1/(b-a) for a<= x <= b
+     = 0       for x < a or x > b
+cumulative distribution function:
+F(x) = 0           for x < a
+     = x-a / x-b   for a <= x <= b
+     = 1.          for x > b
+     
+     
+Moments [of a statistical distribution]
+The shape of any distribution can be described by its various ‘moments’. The first four are:
+1) The mean, the first moment, which indicates the central tendency of a distribution.
+2) The second moment is the variance, which indicates the width or deviation.
+3) The third moment is the skewness, which indicates any asymmetric ‘leaning’ to either left or right.
+4) The fourth moment is the Kurtosis, which indicates the degree of central ‘peakedness’ or, equivalently, the ‘fatness’ of the outer tails.
+
+Normal 
+f(x) = 1 / sigma * sqrt(2*pi)    e ^ (1/2) ((x-miu)/sigma))^2
