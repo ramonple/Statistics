@@ -1,0 +1,24 @@
+Three main hypothesis testings: student t-test, F-test and Chi-squared test
+
+
+p-value:
+Assume we have two samples, A and B. And we have observed two different sample mean values for A and B. We want to know the probability of seeing
+this difference due to random chances alone.
+So, for example, if we have a p-value equals 0.01. This means we have 1% of seeing this difference due random chances alone.
+The smaller p - value means we have stronger evidence to reject the null hypothesis, which assumes there is no difference between the mean of these two samples.
+
+
+1.------------------------  Student t - test ------------------------------------------------------------------------------------------
+By performing a t-test, one can say whether the difference between the two means is statistically significant or by chance alone. 
+
+types of t-test:
+a. Independent samples t-test
+It compares the means of two independent samples. It is also called an unpaired t-test or a two-sample t-test. 
+It is used when the population mean or standard deviation is unknown.
+
+b. Paired samples t-test
+It compares the means of the same group at different time periods. In other words, the t-test is conducted on dependent samples.
+A paired t-test is used when we are interested in the difference between two variables for the same subject.
+
+c. One-sample t-test
+It compares the group mean to a standard value. It can determine whether an unknown population mean is different from a specific value.
