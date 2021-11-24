@@ -1,18 +1,130 @@
 Three main hypothesis testings: student t-test, F-test and Chi-squared test
 
 
-p-value:
+---------------------------------------------------------------- p -value -------------------------------------
 Assume we have two samples, A and B. And we have observed two different sample mean values for A and B. We want to know the probability of seeing
 this difference due to random chances alone.
 So, for example, if we have a p-value equals 0.01. This means we have 1% of seeing this difference due random chances alone.
 The smaller p - value means we have stronger evidence to reject the null hypothesis, which assumes there is no difference between the mean of these two samples.
 
+When the p-value falls below the chosen alpha value, then we say the result of the test is statistically significant.
 
-1.------------------------  Student t - test ------------------------------------------------------------------------------------------
+Statistical significance is a term used by researchers to state that it is unlikely their observations could have occurred under the null hypothesis of a statistical test. 
+Significance is usually denoted by a p-value, or probability value.
+-------------------------------------------------------------- Type I and Type II errors -------------------------------------
+In statistics, a Type I error is a false positive conclusion, while a Type II error is a false negative conclusion.
+Type I error (false positive): the test result says you have coronavirus, but you actually don’t.
+Type II error (false negative): the test result says you don’t have coronavirus, but you actually do.
+
+Type I error: rejecting the null hypothesis when it’s actually true. 
+The risk of committing this error is the significance level (alpha or α) you choose.
+
+Type II error: 
+not rejecting the null hypothesis when it’s actually false.
+Power is the extent to which a test can correctly detect a real effect when there is one.
+The risk of a Type II error is inversely related to the statistical power of a study.
+The higher the statistical power, the lower the probability of making a Type II error.
+
+How do you reduce the Type I error?
+The risk of making a Type I error is the significance level (or alpha) that you choose.
+To reduce the Type I error probability, you can set a lower significance level.
+
+
+
+
+
+
+
+How do you reduce the Type II error?
+The risk of making a Type II error is inversely related to the statistical power of a test.
+To reduce the risk of a Type II error, you can increase the sample size or the significance level to increase statistical power.
+
+
+----------------------------------------------------------------Statistical Power ---------------------------------------------------------
+In statistics, power refers to the likelihood of a hypothesis test detecting a true effect if there is one. 
+A statistically powerful test is more likely to reject a false negative (a Type II error).
+
+If you don’t ensure enough power in your study, you may not be able to detect a statistically significant result
+even when it has practical significance. Your study might not have the ability to answer your research question.
+
+----------------------------------------------------------------Effect size in statistics ---------------------------------------------------------
+Effect size tells you how meaningful the relationship between variables or the difference between groups is. 
+It indicates the practical significance of a research outcome.
+
+A large effect size means that a research finding has practical significance, while a small effect size indicates limited practical applications.
+
+
+
+
+
+----------------------------------------------------------------  Statistical assumptions  ---------------------------------------------------------
+Statistical tests make some common assumptions about the data they are testing:
+1. Independence of observations (a.k.a. no autocorrelation): 
+The observations/variables you include in your test are not related (for example, multiple measurements of a single test subject are not independent, while measurements of multiple different test subjects are independent).
+2. Homogeneity of variance: 
+the variance within each group being compared is similar among all groups. If one group has much more variation than others, it will limit the test’s effectiveness.
+3. Normality of data: 
+the data follows a normal distribution (a.k.a. a bell curve). This assumption applies only to quantitative data.
+
+
+---------------------------------------------- Choosing a parametric test: regression, comparison, or correlation---------------------------------------------------------
+
+Regression tests
+Regression tests look for cause-and-effect relationships. They can be used to estimate the effect of one or more continuous variables on another variable.
+Simple linear regression, multiple linear regression, logistic regression
+
+Comparison tests
+Comparison tests look for differences among group means. They can be used to test the effect of a categorical variable on the mean value of some other characteristic.
+Paired t-test, independent t-test, ANOVA, MANOVA
+
+Correlation tests
+Correlation tests check whether variables are related without hypothesizing a cause-and-effect relationship.
+Pearson's r test
+
+
+----------------------------------------------------Choosing a nonparametric test----------------------------------------------
+Chi-squared test of independentce, Whilconxon Rank-Sum test, Wilcoxon Signed-rank test
+----------------------------------------------------------------    ---------------------------------------------------------
+
+----------------------------------------------------------------    ---------------------------------------------------------
+----------------------------------------------------------------  t - test ------------------------------------------------------------------------------------------
+https://www.scribbr.com/statistics/t-test/
+
+TAKE AWAY:
+
+Frequent asked questions:
+1. what is a t-test?
+A t-test is a statistical test that compares the means of two samples. It is used in hypothesis testing, with a null hypothesis that the difference 
+in group means is zero and an alternate hypothesis that the difference in group means is different from zero.
+
+2. What does a t-test measure?
+A t-test measures the difference in group means divided by the pooled standard error of the two group means.
+In this way, it calculates a number (the t-value) illustrating the magnitude of the difference between the two group means being compared, 
+and estimates the likelihood that this difference exists purely by chance (p-value).
+
+3. which t-test should I use?
+Your choice of t-test depends on whether you are studying one group or two groups, and whether you care about the direction of the difference in group means.
+a. If you are studying one group, use a paired t-test to compare the group mean over time or after an intervention, or use a one-sample t-test to compare the group mean to a standard value. 
+If you are studying two groups, use a two-sample t-test.
+b. If you want to know only whether a difference exists, use a two-tailed test. 
+If you want to know if one group mean is greater or less than the other, use a left-tailed or right-tailed one-tailed test.
+
+4. What is the difference between one-sample t-test and a paired t-test
+a. A one-sample t-test is used to compare a single population to a standard value (for example, to determine whether the average lifespan 
+of a specific town is different from the country average).
+b. A paired t-test is used to compare a single population before and after some experimental intervention 
+or at two different points in time (for example, measuring student performance on a test before and after being taught the material).
+
+5. Can I use a t-test to measure the differencs of more than two groups?
+A t-test should not be used to measure differences among more than two groups, because the error structure for a t-test will underestimate 
+the actual error when many groups are being compared.
+If you want to compare the means of several groups at once, it’s best to use another statistical test such as ANOVA or a post-hoc test.
+
+
 By performing a t-test, one can say whether the difference between the two means is statistically significant or by chance alone. 
 
 types of t-test:
-a. Independent samples t-test
+a. Two samples t-test (Student t-test)
 It compares the means of two independent samples. It is also called an unpaired t-test or a two-sample t-test. 
 It is used when the population mean or standard deviation is unknown.
 
@@ -22,3 +134,52 @@ A paired t-test is used when we are interested in the difference between two var
 
 c. One-sample t-test
 It compares the group mean to a standard value. It can determine whether an unknown population mean is different from a specific value.
+
+
+One-sample, two-sample, or paired t-test?
+If the groups come from a single population (e.g. measuring before and after an experimental treatment), perform a paired t-test.
+If the groups come from two different populations (e.g. two different species, or people from two separate cities), perform a two-sample t-test (a.k.a. independent t-test).
+If there is one group being compared against a standard value (e.g. comparing the acidity of a liquid to a neutral pH of 7), perform a one-sample t-test.
+
+One-tailed or two-tailed t-test?
+If you only care whether the two populations are different from one another, perform a two-tailed t-test.
+If you want to know whether one population mean is greater than or less than the other, perform a one-tailed t-test.
+
+T-test formula:
+The t-test estimates the true difference between two group means using 
+the ratio of the difference in group means over the pooled standard error of both groups. 
+
+The formula for the [two-sample t-test] (a.k.a. the Student’s t-test) is shown below.
+
+t= ( mean(x1) -  mean(x2)) / sqrt( s1^2/n1^2  + s2^2/n2^2)
+
+A larger t-value indicates a more significant difference between the groups.
+You can compare your calculated t-value against the values in a critical value chart to determine whether your t-value
+is greater than what would be expected by chance. 
+If so, you can reject the null hypothesis and conclude that the two groups are in fact different.
+
+
+#### A pooled standard deviation is simply a weighted average of standard deviations from two or more independent groups.
+Pooled standard deviation = √ (n1-1)s12 +  (n2-1)s22 /  (n1+n2-2)
+n1, n2: Sample size for group 1 and group 2, respectively.
+s1, s2: Standard deviation for group 1 and group 2, respectively.
+
+t-test in R:
+t.test(Petal.Length ~ Species, data = flower.data)
+
+Presenting the results of a t-test
+When reporting your t-test results, the most important values to include are the t-value, the p-value, and the degrees of freedom for the test.
+You can also include the summary statistics for the groups being compared, namely the mean and standard deviation.
+
+Example:
+The difference in petal length between iris species 1 (Mean = 1.46; SD = 0.206) and iris species 2 (Mean = 5.54; SD = 0.569) 
+was significant (t (30) = -33.7190; p < 2.2e-16).
+
+
+
+----------------------------------------------------------------  F test --------------------------------------------------------------------------------------
+
+
+
+
+
