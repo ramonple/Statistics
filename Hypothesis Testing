@@ -11,6 +11,20 @@ When the p-value falls below the chosen alpha value, then we say the result of t
 
 Statistical significance is a term used by researchers to state that it is unlikely their observations could have occurred under the null hypothesis of a statistical test. 
 Significance is usually denoted by a p-value, or probability value.
+
+---------------------------------------------------------------- test statistic -------------------------------------
+A test statistic is a number calculated by a statistical test. 
+It describes how far your observed data is from the null hypothesis of no relationship between variables or no difference among sample groups.
+
+
+---------------------------------------------------------------- Quantative & Categorical -------------------------------------
+Quantitative variables are any variables where the data represent amounts (e.g. height, weight, or age).
+Categorical variables are any variables where the data represent groups. This includes rankings (e.g. finishing places in a race), classifications (e.g. brands of cereal), and binary outcomes (e.g. coin flips).
+
+---------------------------------------------------------------- Discrete & Continuous -------------------------------------
+Discrete variables represent counts (e.g. the number of objects in a collection).
+Continuous variables represent measurable amounts (e.g. water volume or weight).
+
 -------------------------------------------------------------- Type I and Type II errors -------------------------------------
 In statistics, a Type I error is a false positive conclusion, while a Type II error is a false negative conclusion.
 Type I error (false positive): the test result says you have coronavirus, but you actually don’t.
@@ -27,14 +41,7 @@ The higher the statistical power, the lower the probability of making a Type II 
 
 How do you reduce the Type I error?
 The risk of making a Type I error is the significance level (or alpha) that you choose.
-To reduce the Type I error probability, you can set a lower significance level.
-
-
-
-
-
-
-
+To reduce the Type I error probability, you can set a lower significance level
 How do you reduce the Type II error?
 The risk of making a Type II error is inversely related to the statistical power of a test.
 To reduce the risk of a Type II error, you can increase the sample size or the significance level to increase statistical power.
@@ -53,10 +60,6 @@ It indicates the practical significance of a research outcome.
 
 A large effect size means that a research finding has practical significance, while a small effect size indicates limited practical applications.
 
-
-
-
-
 ----------------------------------------------------------------  Statistical assumptions  ---------------------------------------------------------
 Statistical tests make some common assumptions about the data they are testing:
 1. Independence of observations (a.k.a. no autocorrelation): 
@@ -66,6 +69,9 @@ the variance within each group being compared is similar among all groups. If on
 3. Normality of data: 
 the data follows a normal distribution (a.k.a. a bell curve). This assumption applies only to quantitative data.
 
+the data are normally distributed
+the groups that are being compared have similar variance
+the data are independent
 
 ---------------------------------------------- Choosing a parametric test: regression, comparison, or correlation---------------------------------------------------------
 
