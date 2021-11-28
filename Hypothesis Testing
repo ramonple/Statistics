@@ -1,5 +1,6 @@
 Three main hypothesis testings: student t-test, F-test and Chi-squared test
 
+https://isoconsultantkuwait.com/2020/10/26/hypothesis-testing/
 
 ---------------------------------------------------------------- p -value -------------------------------------
 Assume we have two samples, A and B. And we have observed two different sample mean values for A and B. We want to know the probability of seeing
@@ -91,12 +92,68 @@ Pearson's r test
 ----------------------------------------------------Choosing a nonparametric test----------------------------------------------
 Chi-squared test of independentce, Whilconxon Rank-Sum test, Wilcoxon Signed-rank test
 
+
+
+- - - - - - - - - - - - - - - - Hypotheses Tests for Comparing  Single Population
+
+- - - - - Comparing Mean (Variance Known)
+
+>>>> Z Test 
+Z = (x_bar - miu_0) /sigma_{x_bar} =  (x_bar - miu_0) / ( sigma_{x}/ sqrt(n) )
+
+
+>>>> Student’s t Test
+t = (x_bar - miu_0) / ( s / sqrt(n) )
+
+x_bar = sample mean, miu_0 = target value or population mean
+s = sample standard deviation. n= number of test samples
+
+
+- - - - - Comparing Standard Deviations/ Variance
+
+>>>> Chi Square (χ2) Test
+
+when variance is known: 
+χ2 = (n-1) s2 / (sigma_x) ^ 2
+sample variance is s2,  number of samples = n.  df=n-1
+χ2 = sum ( O - E)^ 2 / E
+O for observed, E for expected, where the expected value = row total * column total / grand value
+
+
+
+
+- - - - - - - - - - - - - - - - Hypotheses Test for Comparing  two Population
+Comparing Two Means (Variance Known)
+Z Test 
+
+
+Comparing Two Means (Variance Unknown but Equal)
+Independent t-Test.
+
+Comparing Two Means (Variance Unknown and Unequal)
+Independent t-Test.
+
+
+Comparing Two Means (Paired t-test)
+t_{paired} = d-bar / ( sd / sqrt(n). )
+
+d = difference between each pair of values
+d-bar = observed mean difference
+sd = standard deviation of d
+
+Comparing Two Standard Deviations
+F-Test
+
+F = (S1^2 / sigma1^2) /   (S2^2 / sigma2^2)
+
 ----------------------------------------------------------------  t - test ------------------------------------------------------------------------------------------
 https://www.scribbr.com/statistics/t-test/
 
+
+
 T检验适用于数据服从正态分布、但方差未知的情况，通过比较不同数据的均值，研究两组数据是否存在差异。适用于小样本数据。
 
- T检验怎么用
+T检验怎么用
 首先要明确检验的目的，是单样本T检验、配对样本T检验还是独立样本T检验。
 进行正态性检验，独立样本还需要进行方差齐性检验
 选择合适的检验方法进行检验
@@ -208,6 +265,14 @@ used to compare observed results with expected results.
 需要随机样本数据
 理论频数不能太小
 
+Also called the goodness-of-fit test
+
+Steps:
+a. determine your null and alternative hypothese. H0: there is no association between the two variables
+b. choose level of significance (alpha) --> area in the tail
+c. Find the critical Value
+d. Find test statistic
+e. Draw your conclusion
 ----------------------------------------------------------------  F test --------------------------------------------------------------------------------------
 F检验主要用于方差齐性检验、方差分析、线性回归方程整体的显著性检验。
 
