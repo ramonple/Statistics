@@ -1,0 +1,29 @@
+t distribution, χ2 distribution, F distribution
+
+
+
+----- t distribution
+
+t = (x̄ – μ) / (s/√n)
+
+Where,
+
+x̄ is the sample mean
+μ is the population mean
+s is the standard deviation
+n is the size of the given sample
+
+
+
+-----  χ2 distribution
+If a random variable Z has the standard normal distribution, then Z^2 has the χ2 distribution with 1 degree of freedom.
+If Z1,Z2,...,Zk are independent standard normal distribution random variables, then 
+Z1^2 + Z2^2 + ... + Zk^2 has a χ2 distribution with k degrees of freedom.
+
+the mean of χ2 distribution is k (df)
+the variance of χ2 distribution is 2k
+
+probability density function = ( 1/ 2^(k/2) Gamma(k/2) ) x^(k/2) e^(-x/2), x> 0 
+                                0                                          x<=0
+                                
+                                
