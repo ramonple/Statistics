@@ -1,0 +1,10 @@
+Covariance and correlation
+
+Both describe the relationship between two numerical variables
+
+
+Cov(X,Y)=sigma_(x,y) = ∑(Xi−X-bar)(Yi−Y-bar)/ n-1 
+
+sample correlation r_x,y = S_x,y/S_x S_y
+
+population correlation pho_x,y = sigma_x,y/ sigma_x sigma_y
