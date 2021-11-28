@@ -273,6 +273,10 @@ b. choose level of significance (alpha) --> area in the tail
 c. Find the critical Value
 d. Find test statistic
 e. Draw your conclusion
+
+
+
+
 ----------------------------------------------------------------  F test --------------------------------------------------------------------------------------
 F检验主要用于方差齐性检验、方差分析、线性回归方程整体的显著性检验。
 
