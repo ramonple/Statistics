@@ -5,6 +5,13 @@ Both describe the relationship between two numerical variables
 
 Cov(X,Y)=sigma_(x,y) = ∑(Xi−X-bar)(Yi−Y-bar)/ n-1 
 
+covariance only tells us they are positive or negatively related. It cannot tell use the strength of the relation.
+
+
+
 sample correlation r_x,y = S_x,y/S_x S_y
 
 population correlation pho_x,y = sigma_x,y/ sigma_x sigma_y
+A correlation coefficient of 1 means that for every positive increase in one variable, there is a positive increase of a fixed proportion in the other.
+A correlation coefficient of -1 means that for every positive increase in one variable, there is a negative decrease of a fixed proportion in the other. 
+Zero means that for every increase, there isn’t a positive or negative increase. The two just aren’t related.
