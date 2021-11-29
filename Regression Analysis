@@ -1,0 +1,135 @@
+>>> What is Regression Analysis?
+Regression analysis is a set of statistical methods used for the estimation of relationships 
+between a dependent variable and one or more independent variables. It can be utilized to assess
+the strength of the relationship between variables and for modeling the future relationship between them.
+
+Regression Analysis - linear regerssion, Logistic Regression, Polynomial Regression, Stepwise Regression
+
+
+
+
+------------------------------------------------ Linear Regression  ------------------------------------
+
+>>>>> Four assumptions associated with a linear regression model:
+
+Linearity: The relationship between X and the <mean> of Y is linear.
+Homoscedasticity: The variance of residual is the same for any value of X.
+Independent errors: The residuals (errors) should be independent of one another over time.
+Normality: The residuals (errors in prediction) should be normally distributed.
+
+
+-----------------  Simple Linear Regression
+
+Simple Linear Regression
+Y = a + bX + ϵ
+
+
+-----------------   Multiple Linear Regression
+Y = a + bX1 + cX2 + dX3 + ϵ
+Multiple linear regression follows the same conditions as the simple linear model. However, since there are 
+several independent variables in multiple linear analysis, there is another mandatory condition for the model:
+
+<Multicollinearity>
+
+Multicollinearity occurs when independent variables in a regression model are correlated with one another. 
+
+Detecting Multicollinearity using Variance Inflation Factors (VIF determines the strength of the correlation between the independent variables.
+VIFs start at 1 and have no upper limit.
+1. Variance Inflation Factor(VIF)
+– If VIF=1; No multicollinearity
+– If VIF=<5; Low multicollinearity or moderately correlated
+– If VIF=>5; High multicollinearity or highly correlated
+2. Tolerance(Reciprocal of VIF) (1/VIF)
+– If VIF is high then tolerance will be low i.e, high multicollinearity.
+– If VIF is low the tolerance will be high i.e, low multicollinearity.
+
+R-squared is how well the regression model fits the observed data, represents the proportion of the variance for a dependent variable that's explained the model.
+R^2 = Variance explained by the model / total Variance = (1-SS_{residuals})/SS_{total}
+
+VIF=1/(1-R^2)
+
+Adjusted R-squared is a modified version of R-squared:
+Adjusted R^2  1 -   [ SS_{residuals} / (n-K)  ] /[ SS_{total} / (n-1) ].
+n: total sample size, K: number of predictors
+
+
+How to deal with the Multicollinearity? 
+a. Remove some of the highly correlated independent variables.
+b. Linearly combine the independent variables, such as adding them together.
+c. Perform an analysis designed for highly correlated variables, such as principal components analysis.
+
+-------------- other concepts
+
+>>> 1. Least square estimation (OLSE: ordinary least square estimation)
+OLSE is a type of method for estimating the unknown parameters in a linear regression model
+
+Q=∑ (i=1 to n)  [y_i−(β̂_0+β̂_1 x_1,i + β̂_2 x_2,i)]^ 2
+
+β̂_1=∑(i=1 to n)(x_i−x¯)(y_i−y¯)  / ∑(i=1 to n) (xi−x¯)^2, β̂_0 = y¯ - β̂_1 x¯
+
+
+
+>>> 2. Maximum likelihood estimation (MLE)
+MLE is a method of estimating the parameters of an assumed probability distribution, given some observed data. 
+
+>>> 3. Residual Analysis
+
+Residual analysis is used to assess the appropriateness of a linear regression model by defining residuals and 
+examining the residual plot graphs.
+
+<residual plot>
+is a graph that shows the residuals on the vertical axis and the independent variable on the horizontal axis.
+typical patterns for residual plots:
+
+a. random pattern -> residuals do not contradict the linear assumption
+b. non-random pattern -> Consider other technique
+U-shaped curve, Inverted U -> Definite curved pattern which would indicated a linear model is not a good ift 
+c. small for small x but increases for larger x --> This linear model is a good fit for relatively small x-values, 
+                                                    but not a good predictor of large x values
+                                                    
+
+
+
+
+
+
+------------------------------------------------ Logistic Regression  ----------------------------------------------
+
+log(p/1-p) = b0 + b1x1 + b2x2 => p/1-p = exp( b0 + b1x1 + b2x2 ) => p = exp( b0 + b1x1 + b2x2 ) / ( 1 + exp( b0 + b1x1 + b2x2 ) )
+
+CDF：F(X<=x) = 1/ (1+exp(-(x-u)/r)
+pdf: f(x) = F'(X<=x)= exp(-(x-u)/r/ [ r (1+exp(-(x-u)/r)^2 ]
+where u is the 
+
+
+
+-----------------------------------------------  Polynomial regression -----------------------------------------------
+ a form of regression analysis in which the relationship between the independent variable x and the dependent variable y is modelled 
+ as an nth degree polynomial in x.
+
+y = b0 + b1x + b2x^2 + b3x^3 + e
+
+can be expressed in matrix form:
+y1        1  x1  x1^2 ... x1^m         b0         e1
+y2        1  x2  x2^2 ... x2^m         b1         e2
+y3        1  x3  x3^2 ... x3^m         b2         e3
+.     =                                      +
+.
+.
+yn        1  xn  xn^2 ... xn^m         bm         en
+
+
+------------------------------------------------ Stepwise Regression  ----------------------------------------------
+
+Stepwise regression is a method that iteratively examines the statistical significance of each independent variable in a linear regression model.
+>> Forward selection: begins with no variables in the model, tests each variable as it is added to the model, 
+                      then keeps those that are deemed most statistically significant
+>> Backward elimination:  starts with a set of independent variables, deleting one at a time, then testing to see if the 
+                          removed variable is statistically significant.
+>> Bidirectional elimination is a combination of the first two methods that test which variables should be included or excluded.
+
+
+
+
+
+
