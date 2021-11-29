@@ -1,0 +1,31 @@
+-------------------------------------- Missing Values --------------------------------------
+How to handle missing data?
+a. delete rows with missing data
+b. mean/ median/ mode imputation
+c. assigning a unique value
+d. predicting the missing values
+e. using an algorithm which supports missing values, like random forests
+
+The best method is to delete rows with missing data as it ensures no bias or variance is added or removed.
+However, this is only recommended if there is enough data
+
+-------------------------------------- Outliers --------------------------------------
+
+How to detect outliers:
+data visualization -> Boxplot, scatterplot, histogram
+statistical way -> 
+a. using the Z-scores
+b. InterQuartile range (IQR) technique: IQR = Q3 - Q1 = third quartile - first quartile
+Multiplying the interquartile range (IQR) by 1.5 will give us a way to determine whether a certain value is an outlier. 
+If we subtract 1.5 x IQR from the first quartile, any data values that are less than this number are considered outliers. 
+Similarly, if we add 1.5 x IQR to the third quartile, any data values that are greater than this number are considered outliers.
+
+How to deal with the outliers?
+1. remove the outliers
+2. Quantile based flooring and capping: 
+              The data points that are lesser than the 10th percentile are replaced with the 10th percentile value and 
+              the data points that are greater than the 90th percentile are replaced with 90th percentile value.
+3. Mean/ Median imputation:
+          As the mean value is highly influenced by the outliers, it is advised to replace the outliers with the median value.
+          
+          
