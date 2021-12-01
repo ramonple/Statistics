@@ -61,3 +61,7 @@ Types of Nonparametric Tests
 However, the test assumes your data comes from a symmetric distribution (like the Cauchy distribution or uniform distribution).
 
 Mann-Whitney test. Use this test to compare differences between two independent groups when dependent variables are either ordinal or continuous.
+
+
+Wilcoxon Signed Rank Test ---> The one applied in my second paper
+
