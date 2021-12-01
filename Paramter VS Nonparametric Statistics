@@ -1,0 +1,63 @@
+
+>> Parametric Statistics
+Parametric statistics are based on assumptions about the distribution of population from which the sample was taken. 
+
+Examples:
+student T-test
+ANOVA
+
+
+
+
+
+
+>> Nonparametric Statistics
+Nonparametric statistics are not based on assumptions, that is, the data can be collected from a sample that does not follow a specific distribution.
+When the word “non parametric” is used in stats, it doesn’t quite mean that you know nothing about the population. 
+It usually means that you know the population data does not have a normal distribution.
+
+Examples:
+Mann-Whitney Test
+Wilcoxon signed Rank Test
+
+
+For example, one assumption for the one way ANOVA is that the data comes from a normal distribution. 
+If your data isn’t normally distributed, you can’t run an ANOVA, but you can run the nonparametric alternative—the Kruskal-Wallis test.
+
+
+If at all possible, you should us parametric tests, as they tend to be more accurate. 
+Parametric tests have greater statistical power, which means they are likely to find a true significant effect. 
+Use nonparametric tests only if you have to (i.e. you know that assumptions like normality are being violated). 
+Nonparametric tests can perform well with non-normal continuous data if you have a sufficiently large sample size (generally 15-20 items in each group)
+
+
+
+When to use it?
+Non parametric tests are used when your data isn’t normal. Therefore the key is to figure out if you have normally distributed data.
+For example, you could look at the distribution of your data. If your data is approximately normal, then you can use parametric statistical tests.
+
+Q. If you don’t have a graph, how do you figure out if your data is normally distributed?
+A. Check the skewness and Kurtosis of the distribution using software like Excel (See: Skewness in Excel 2013 and Kurtosis in Excel 2013).
+
+Kurtosis refers to how much of the data is in the tails and the center. 
+The skewness and kurtosis for a normal distribution is about 1.
+
+If your distribution is not normal (in other words, the skewness and kurtosis deviate a lot from 1.0), you should use a non parametric test like chi-square test. 
+Otherwise you run the risk that your results will be meaningless.
+
+Data Types
+Does your data allow for a parametric test, or do you have to use a non parametric test like chi-square? The rule of thumb is:
+
+For <nominal scales> or <ordinal scales>, use non parametric statistics.
+For <interval scales> or <ratio scales> use parametric statistics.
+
+
+
+Types of Nonparametric Tests
+
+1-sample sign test. Use this test to estimate the median of a population and compare it to a reference value or target value.
+
+1-sample Wilcoxon signed rank test. With this test, you also estimate the population median and compare it to a reference/target value. 
+However, the test assumes your data comes from a symmetric distribution (like the Cauchy distribution or uniform distribution).
+
+Mann-Whitney test. Use this test to compare differences between two independent groups when dependent variables are either ordinal or continuous.
