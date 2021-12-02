@@ -17,6 +17,13 @@ Significance is usually denoted by a p-value, or probability value.
 A test statistic is a number calculated by a statistical test. 
 It describes how far your observed data is from the null hypothesis of no relationship between variables or no difference among sample groups.
 
+A test statistic is a random variable that is calculated from sample data and used in a hypothesis test. 
+
+You can use test statistics to determine whether to reject the null hypothesis. 
+The test statistic compares your data with what is expected under the null hypothesis. The test statistic is used to calculate the p-value.
+
+
+
 
 ---------------------------------------------------------------- Quantative & Categorical -------------------------------------
 Quantitative variables are any variables where the data represent amounts (e.g. height, weight, or age).
@@ -49,6 +56,8 @@ To reduce the risk of a Type II error, you can increase the sample size or the s
 
 
 ----------------------------------------------------------------Statistical Power ---------------------------------------------------------
+statistical power is the probability that a test will correctly reject a false null hypothesis.
+
 In statistics, power refers to the likelihood of a hypothesis test detecting a true effect if there is one. 
 A statistically powerful test is more likely to reject a false negative (a Type II error).
 
@@ -56,6 +65,8 @@ If you don’t ensure enough power in your study, you may not be able to detect 
 even when it has practical significance. Your study might not have the ability to answer your research question.
 
 ----------------------------------------------------------------Effect size in statistics ---------------------------------------------------------
+In statistics, an effect size is a number measuring the strength of the relationship between two variables in a population, 
+
 Effect size tells you how meaningful the relationship between variables or the difference between groups is. 
 It indicates the practical significance of a research outcome.
 
