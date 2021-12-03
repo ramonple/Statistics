@@ -1,0 +1,8 @@
+Central Limit Theorem (CLT)
+
+The distirbution of a sample mean approximates a normal distribution as the sample size becomees larger. No matter what the shape of 
+the population distribution.
+
+
+Law of large numbers
+An observed sample mean from a large sample will be close to the true population mean. And it will get closer when the sample size becomes larger.
